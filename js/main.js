@@ -5,8 +5,8 @@ $(document).ready(function(){
 		$("div.grid").remove();
 	};
 	var setDimensions = function(area) {
-		$("div.grid").height($("div.wrapper").height()/area);
-		$("div.grid").width($("div.wrapper").width()/area);
+		$("div.grid").height(($("div.wrapper").height()/area)-2);
+		$("div.grid").width(($("div.wrapper").width()/area)-2);
 		$("div.grid").hover(function(){
 			$(this).css("background-color", "black");
 		});
